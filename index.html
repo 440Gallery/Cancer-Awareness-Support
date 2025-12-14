@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cancer Awareness & Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <div class="logo">Cancer Care &amp; Support</div>
+      <nav class="nav">
+  <a href="#home">Home</a>
+  <a href="#support">Support</a>
+  <a href="#contact">Contact</a>
+  <a href="#quotes">Quotes</a>
+  <a href="dashboard.html">Dashboard</a>
+</nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Landing -->
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1>You are not alone in the fight against cancer</h1>
+          <p>
+            This space is dedicated to awareness, emotional support, and helpful resources 
+            for patients, survivors, and caregivers.
+          </p>
+          <a href="#contact" class="btn-primary">Get Support</a>
+        </div>
+        <div class="hero-image">
+          <!-- Use any local banner image file, e.g. banner.jpg -->
+          <img src="banner.jpg" alt="Cancer awareness banner with ribbon">
+        </div>
+      </div>
+    </section>
+
+    <!-- Support / Info Section -->
+    <section id="support" class="support">
+      <div class="container">
+        <h2>Support We Offer</h2>
+        <p class="section-intro">
+          Find guidance, comfort, and community as you navigate diagnosis, treatment, or survivorship.
+        </p>
+        <div class="support-grid">
+          <article class="support-card">
+            <h3>Emotional Support</h3>
+            <p>Connect with people who understand what you are going through and share your feelings safely.</p>
+          </article>
+          <article class="support-card">
+            <h3>Medical Guidance</h3>
+            <p>Learn about treatment options, side effects, and questions to ask your healthcare team.</p>
+          </article>
+          <article class="support-card">
+            <h3>Community &amp; Resources</h3>
+            <p>Access educational materials, local groups, and digital communities that offer ongoing support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes Section (Bonus) -->
+    <section id="quotes" class="quotes">
+      <div class="container">
+        <h2>Words of Hope</h2>
+        <p class="section-intro">
+          Read a short quote for strength and encouragement. Click below to see a new one.
+        </p>
+        <div class="quote-box">
+          <p id="quote-text">Click the button to load an inspirational quote.</p>
+          <p id="quote-author" class="quote-author"></p>
+        </div>
+        <button id="new-quote-btn" class="btn-secondary">New Quote</button>
+        <p id="quote-error" class="quote-error" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p class="section-intro">
+          Share your questions or message, and we will connect you with helpful information and support.
+        </p>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name<span aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" required>
+            <small class="error-message" id="name-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="email">Email<span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required>
+            <small class="error-message" id="email-error"></small>
+          </div>
+          <div class="form-group">
+            <label for="message">Message<span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <small class="error-message" id="message-error"></small>
+          </div>
+          <button type="submit" class="btn-primary">Send Message</button>
+          <p id="form-success" class="form-success" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Cancer Awareness &amp; Support. For educational and awareness purposes only.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
